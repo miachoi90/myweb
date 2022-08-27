@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+
+body{
+    margin: 0 auto;
+    font-family: 'Cairo', sans-serif;   
+    height: 100vh;
+    padding: 0;
+    background-image: url(../images/bg.jpg); 
+
+}
+
+
+.TitleBox{
+    padding: 10px;
+    opacity: 0.3;
+    position: absolute;
+    z-index: 999;
+    background-color: #fff;
+    width: 100%;
+
+}
+
+
+@keyframes titleOpa {
+    from {opacity: 0.3;}
+    to {opacity: 1;}
+  }
+
+  
+.TitleBox:hover {
+    opacity: 1;
+    animation-name: titleOpa;
+    animation-duration: 1s;
+}
+
+.logo{
+    display: inline-block;
+    float: left;
+    width: 20%;
+}
+.workTitle{
+    font-family: 'Lilita One', cursive !important;
+    font-size: 1.5em;
+    text-align: right;
+    color: #95DB42;
+}
+
+.description {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding:20px 0 10px 0 ;
+    font-family: 'Cairo', sans-serif;   
+    font-size: 0.7em;
+    text-align: right;
+    color: #1C1C1B;
+}
+
+.workType {
+    font-family: 'Cairo', sans-serif;   
+    font-size: 0.5em;
+    color: #333;
+
+}
+
+.bottom {
+    background-color: #fff;
+    display: block;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    font-size: 12px;
+    z-index: 999;
+}
+
+
+/*Slideshow*/
+
+*{box-sizing: border-box; -webkit-box-sizing: border-box; }
+.content{ height: 100vh;margin: 0; font: 16px/1.3 }
+
+/*
+PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+http://stackoverflow.com/a/34696029/383904
+*/
+
+.CSSgal {
+	position: relative;
+	overflow: hidden;
+	height: 100%; /* Or set a fixed height */
+}
+
+/* SLIDER */
+
+.CSSgal .slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+/* SLIDES */
+
+.CSSgal .slider > * {
+	font-size: 1rem;
+	display: inline-block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background: none 50% no-repeat;
+	background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.CSSgal .prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	width: 100%;
+	height: 0;
+}
+
+.CSSgal .prevNext > div+div {
+	visibility: hidden; /* Hide all but first P/N container */
+}
+
+.CSSgal .prevNext a {
+	background: #A7F752;
+	position: absolute;
+	width:       50px;
+	height:      50px;
+	line-height: 50px; /* If you want to place numbers */
+	text-align: center;
+	opacity: 0.7;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+	left: 0;
+}
+.CSSgal .prevNext a:hover {
+	opacity: 1;
+}
+.CSSgal .prevNext a+a {
+	left: auto;
+	right: 0;
+}
+
+/* NAVIGATION */
+
+.CSSgal .bullets {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	padding: 20px 0;
+	width: 100%;
+	text-align: center;
+}
+.CSSgal .bullets > a {
+	display: inline-block;
+	width:       10px;
+	height:      10px;
+	line-height: 10px;
+	text-decoration: none;
+	text-align: center;
+	background: #A7F752;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+}
+.CSSgal .bullets > a+a {
+	background: #A7F752; /* Dim all but first */
+}
+.CSSgal .bullets > a:hover {
+	background: #A7F752 !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.CSSgal >s:target ~ .bullets >* {      background: rgba(255, 255, 255, 0.5);}
+/* ACTIVE */
+#s1:target ~ .bullets >*:nth-child(1) {background: #A7F752;}
+#s2:target ~ .bullets >*:nth-child(2) {background: #A7F752;}
+#s3:target ~ .bullets >*:nth-child(3) {background: #A7F752;}
+#s4:target ~ .bullets >*:nth-child(4) {background: #A7F752;}
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#s1:target ~ .prevNext >*:nth-child(1) {visibility: visible;}
+#s2:target ~ .prevNext >*:nth-child(2) {visibility: visible;}
+#s3:target ~ .prevNext >*:nth-child(3) {visibility: visible;}
+#s4:target ~ .prevNext >*:nth-child(4) {visibility: visible;}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#s1:target ~ .slider {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#s2:target ~ .slider {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#s3:target ~ .slider {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#s4:target ~ .slider {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.CSSgal{
+	color: #fff;	
+	text-align: center;
+}
+.CSSgal .slider h2 {
+	margin-top: 40vh;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 3em;
+}
+.CSSgal a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+.content_mob{
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    /*Slideshow*/
+
+*{box-sizing: border-box; -webkit-box-sizing: border-box; }
+
+/*
+PURE RESPONSIVE CSS3 SLIDESHOW GALLERY by Roko C. buljan
+http://stackoverflow.com/a/34696029/383904
+*/
+
+.mob_CSSgal {
+	position: relative;
+	overflow: hidden;
+	height: 100%; /* Or set a fixed height */
+}
+
+/* SLIDER */
+
+.mob_CSSgal .mob_slider {
+	height: 100%;
+	white-space: nowrap;
+	font-size: 0;
+	transition: 0.8s;
+}
+
+/* SLIDES */
+
+.mob_CSSgal .mob_slider > * {
+	font-size: 1rem;
+	display: block;
+	white-space: normal;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.mob_CSSgal .mob_prevNext {
+	position: absolute;
+	z-index: 1;
+	top: 10%;
+	width: 100%;
+	height: 0;
+}
+
+.mob_CSSgal .mob_prevNext > div+div {
+	visibility: hidden; /* Hide all but first P/N container */
+}
+
+.mob_CSSgal .mob_prevNext a {
+	background: #A7F752;
+	position: absolute;
+	width:       50px;
+	height:      50px;
+	line-height: 50px; /* If you want to place numbers */
+	text-align: center;
+	opacity: 0.7;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+	-webkit-transform: translateY(-50%);
+					transform: translateY(-50%);
+	left: 0;
+}
+.mob_CSSgal .mob_prevNext a:hover {
+	opacity: 1;
+}
+.mob_CSSgal .mob_prevNext a+a {
+	left: auto;
+	right: 0;
+}
+
+/* NAVIGATION */
+
+.mob_CSSgal .mob_bullets {
+	position: absolute;
+	z-index: 2;
+	bottom: 0;
+	padding: 20px 0;
+	width: 100%;
+	text-align: center;
+}
+.mob_CSSgal .mob_bullets > a {
+	display: inline-block;
+	width:       10px;
+	height:      10px;
+	line-height: 10px;
+	text-decoration: none;
+	text-align: center;
+	background: #A7F752;
+	-webkit-transition: 0.3s;
+					transition: 0.3s;
+}
+.mob_CSSgal .mob_bullets > a+a {
+	background: #A7F752; /* Dim all but first */
+}
+.mob_CSSgal .mob_bullets > a:hover {
+	background: #A7F752 !important;
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.mob_CSSgal >s:target ~ .mob_bullets >* {      background: rgba(255, 255, 255, 0.5);}
+/* ACTIVE */
+#mob_s1:target ~ .mob_bullets >*:nth-child(1) {background: #A7F752;}
+#mob_s2:target ~ .mob_bullets >*:nth-child(2) {background: #A7F752;}
+#mob_s3:target ~ .mob_bullets >*:nth-child(3) {background: #A7F752;}
+#mob_s4:target ~ .mob_bullets >*:nth-child(4) {background: #A7F752;}
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.CSSgal >s:target ~ .prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#mob_s1:target ~ .mob_prevNext >*:nth-child(1) {visibility: visible;}
+#mob_s2:target ~ .mob_prevNext >*:nth-child(2) {visibility: visible;}
+#mob_s3:target ~ .mob_prevNext >*:nth-child(3) {visibility: visible;}
+#mob_s4:target ~ .mob_prevNext >*:nth-child(4) {visibility: visible;}
+/* More slides? Add here more rules */
+
+/* SLIDER ANIMATION POSITIONS */
+
+#mob_s1:target ~ .mob_slider {transform: translateY(   0%); -webkit-transform: translateY(   0%);}
+#mob_s2:target ~ .mob_slider {transform: translateY(-100%); -webkit-transform: translateY(-100%);}
+#mob_s3:target ~ .mob_slider {transform: translateY(-200%); -webkit-transform: translateY(-200%);}
+#mob_s4:target ~ .mob_slider {transform: translateY(-300%); -webkit-transform: translateY(-300%);}
+/* More slides? Add here more rules */
+
+
+/* YOU'RE THE DESIGNER! 
+   ____________________
+   All above was mainly to get it working :)
+   CSSgal CUSTOM STYLES / OVERRIDES HERE: */
+
+.mob_CSSgal{
+	color: #fff;	
+	text-align: center;
+}
+.mob_CSSgal .mob_slider h2 {
+	margin-top: 40vh;
+	font-weight: 200;
+	letter-spacing: -0.06em;
+	word-spacing: 0.2em;
+	font-size: 3em;
+}
+.mob_CSSgal a {
+	border-radius: 50%;
+	margin: 0 3px;
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+    .content_mob{
+        display: block;
+        height: 100vh;margin: 0; font: 16px/1.3 
+    }
+
+
+    .content {
+        display: none;
+    }
+
+
+
+    .TitleBox {
+        position: relative;
+        opacity: 1;
+        display: block;
+    }
+    .TitleBox:hover {
+        opacity: 1;
+    }
+    .logo {
+        width: 30%;
+    }
+
+    .description {text-align: left;}
+
+}

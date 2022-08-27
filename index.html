@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns
+="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Mia Choi</title>
+<link rel="stylesheet" href="css/style2.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
+<script type='text/javascript' src='js/jquery.mousewheel.min.js'></script>
+
+<script>
+$(function() {
+
+   var is_mobile = false;
+
+
+   if ( $('div#scroll1').css('display')=='none') {
+
+    is_mobile = true;
+
+   }
+
+   if (is_mobile != true) {
+
+ $('#wrap').mousewheel(function(event, delta) {
+
+      this.scrollLeft -= (delta * 5);
+    
+      event.preventDefault();
+
+   });
+
+
+    
+
+   }
+
+});
+  var onOff = true;
+
+function mobileMenu() {
+
+  if (onOff==true) {
+
+      $('#st_1').addClass('btn_rt1');
+      $('#st_3').addClass('btn_rt2');
+      $('#st_2').addClass('btn_rt3');
+      $('.back_container').addClass('Opacity');
+
+
+      onOff = false;
+
+  } else {
+     $('#st_1').removeClass('btn_rt1');
+      $('#st_3').removeClass('btn_rt2');
+      $('#st_2').removeClass('btn_rt3');
+      $('.back_container').removeClass('Opacity');
+
+      onOff = true;
+
+  }
+     
+
+}
+
+
+</script>
+
+<link rel="shortcut icon" href="favicon.png" />
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Load our React component. -->
+  <script src="like_button.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+
+
+  <div class="mobileTitle">
+<div class="menubtn" onclick="mobileMenu()"><div class="stk" id="st_1"></div><div class="stk" id="st_2"></div><div class="stk" id="st_3"></div></div>
+  <a href="index.html"><img class="mt_img" src="images/mob_title.png" width="40%"></a></div>
+
+
+<div class="back_container">
+<div class="logo_box">
+  <div class="myname">Hi,<br/> My name is </div> 
+<img class="mialogo" src="images/logo.png" width="30%"></div>
+<div class="myname uppadding">Thanks for visiting!</div> 
+<div class="titleline"></div>
+
+           </section>
+</div>
+
+<div class="back_container">
+     <div class= "subtitle">BI</a></div>
+     <div class="titleline"></div>
+          <div id="like_button_container"></div>
+         <div class= "subnavi">
+         <ul class ="years">
+         <span class="yfont">2 0 2 2 </span>
+         <li><a href="#">Soro Soro Coffee & Dessert </a><span class="ye">Logo</span></li>
+          <li><a href="oy.html">Onyou </a><span class="ye">Logo</span></li>
+         <li><a href="#">Mia </a><span class="ye">Logo</span></li>
+
+
+        </ul>
+        <ul class ="years">
+          <span class="yfont">2014-2021 </span>
+          <li><a href="mbm.html">Mombymom </a><span class="ye">BI & App design</span></li>
+          <li><a href="http://hammiehamster.com">SimpleSteps</a> <span class="ye">Marketing Meterials</span></li>
+          <li><a href="#">zipbab </a><span class="ye">Logo</span></li>
+      
+         </ul>
+         
+        
+        
+        
+        
+         </div>
+</div>
+
+
+<div class="back_container">
+<div class= "subtitle">Illustrations & Graphics</div>
+<div class="titleline"></div>
+
+         <div class= "subnavi">
+
+         <ul class ="years">
+          <span class="yfont">2 0 2 2 </span>
+         <li><a href="#">Friends Look Alike</a></li>
+         <li><a href="#">K-foodie</a></li>
+        </ul>
+        <ul class ="years">
+
+        <span class="yfont">2014-2021 </span>
+          <li><a href="menu1_1.html">Hammie Hamster Labs, Inc.</a></li>
+          
+        </ul>
+
+        </div>
+        
+</div>
+
+
+<div class="back_container">
+ <div class= "subtitle">About</div>
+ <div class="titleline"></div>
+
+         <div class= "subnavi">
+
+  <ul class ="years">
+
+                  <span class="yfont">MIA S. CHOI</span>
+         <li> Graphic Designer</li>
+         <li> Grew up in Seoul, Korea</li>
+         <li> Currently in Camas, Washington</li>
+         <li> Mom of two beautiful children</li>
+         <li><a href="#">More about me!</a></li>
+
+         <li><img src="images/mail_icon_y.png" class="contacticon" width="30px"><img class="contacticon" src="images/insta_icon_y.png" width="30px"><img class="contacticon" src="images/li_icon_y.png" width="30px"></li>
+         <li></li>
+        </ul>
+        </div>
+</div>
+
+<div class="container1" id = "scroll1">
+
+<div id="shp1p"><img src="images/shp1.png" id="shp1" class="animate0"/></div>
+<div id="shp2p"><img src="images/shp2.png" id="shp2" class="animate0" /></div>
+<div id="shp3p"><img src="images/shp3.png" id="shp3" class="animate0" /></div>
+<div id="shp4p"><img src="images/shp4.png" id="shp4" class="animate0" /></div>
+<div id="shp5p"><img src="images/shp5.png" id="shp5" class="animate0" /></div>
+<div id="shp6p"><img src="images/shp6.png" id="shp6" class="animate0" /></div>
+<div id="fl"><div id="shp7p"><img src="images/shp7.png" id="shp7" class="animate0"/></div></div>
+
+
+
+</div>
+<div id="bgimg" class="bgimg1"></div>
+
+<div class="bottom"> 
+  
+  <div class="bottomline"></div>
+  (c)Copyright 2022. Mia Choi all rights reserved.</div>
+</div>
+</body>
+</html>

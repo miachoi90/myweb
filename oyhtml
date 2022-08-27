@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Studio Anyoung Mia</title>
+	<link rel="stylesheet" href="css/common.css" />
+<link rel="shortcut icon" href="favicon.png" />
+
+</head>
+
+<body>
+	<div class="sidewrap">
+		<div class="TitleBox">
+			<div class="logo"><a href="index.html"><img src="images/sidelogo.png"/ width="50%"></a></div>
+			<div class="workTitle">
+				<div class="workType">2019</div>
+				<div clas="workName">MombyMom</div>
+				<div class="workType">Logo & Application Design</div>
+                <div class="description">
+                    MombyMom is a service that helps working moms to connect to other working moms in order to work together from home and share childcare.
+                </div>
+                
+			</div>
+		</div>
+	
+		<div class="content">
+			<div class="CSSgal">
+
+				<!-- Don't wrap targets in parent -->
+				<s id="s1"></s> 
+				<s id="s2"></s>
+				<s id="s3"></s>
+				<s id="s4"></s>
+			  
+				<div class="slider">
+				  <div style="background-image: url('images/mombymom/1.png');">
+					  </div>
+				  <div style="background-image: url('images/mombymom/2.png');">				
+						
+					  </div>
+				  <div style="background:#e95;">
+						  <h2>Slide 3</h2>
+					  </div>
+				  <div style="background:#e59;">
+						  <h2>Slide 4</h2>
+					  </div>
+				</div>
+				
+				<div class="prevNext">
+				  <div><a href="#s4"><</a><a href="#s2">></a></div>
+				  <div><a href="#s1"><</a><a href="#s3">></a></div>
+				  <div><a href="#s2"><</a><a href="#s4">></a></div>
+				  <div><a href="#s3"><</a><a href="#s1">></a></div>
+				</div>
+			  
+				<div class="bullets">
+				  <a href="#s1"></a>
+				  <a href="#s2"></a>
+				  <a href="#s3"></a>
+				  <a href="#s4"></a>
+				</div>
+			  
+			  </div>
+		</div>
+
+
+		<div class="bottom"> 
+
+			(c)Copyright 2022. Studio Anyoung Mia all rights reserved.</div>
+		  </div>
+
+</body>
+</html>
